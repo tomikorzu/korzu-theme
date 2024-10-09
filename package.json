@@ -1,0 +1,21 @@
+{
+  "name": "korzu-theme",
+  "displayName": "korzu theme",
+  "description": "This is the best vscode theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Korzu Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Korzu Theme-color-theme.json"
+      }
+    ]
+  }
+}
