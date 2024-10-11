@@ -1,39 +1,111 @@
 {
   "name": "Korzu Theme",
   "colors": {
-    "editor.background": "#1f343f",
-    "editor.foreground": "#d5e8f6",
+    "list.inactiveSelectionBackground": "#043e59",
+    "editor.background": "#132939",
+    "tab.activeForeground": "#7cfa6f",
+    "tab.inactiveForeground": "#98bfe8",
+    "editor.foreground": "#afe4ff",
+    "activityBar.background": "#1e303d",
+    "activityBar.activeBorder": "#8719dd",
+    "activityBar.activeBackground": "#243c4d",
+    "editorHoverWidget.background": "#3c586c",
+    "tab.inactiveBackground": "#09192c",
+    "tab.activeBorderTop": "#6cff39",
+    "tab.hoverBackground": "#063d76",
+    // "terminal.background": "#174144",
+    // "terminal.foreground": "#ff2082",
+    "editorCursor.foreground": "#0aff33",
+    "sideBar.background": "#0b293a",
+    "sideBar.foreground": "#bfe2f5",
+    "list.hoverBackground": "#07577e",
+    "scrollbarSlider.background": "#535d62",
     "activityBarBadge.background": "#152e3e",
     "sideBarTitle.foreground": "#59a2d6"
   },
+
   "tokenColors": [
+    {
+      "name": "react-import",
+      "scope": ["keyword.control.import.js.jsx"],
+      "settings": {
+        "foreground": "#a404ee",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "react-as",
+      "scope": ["keyword.control.as.js.jsx"],
+      "settings": {
+        "foreground": "#dd20ff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "react-abc",
+      "scope": [
+        "support.class.component.js.jsx",
+        "entity.name.tag.js.jsx",
+        "meta.tag.without-attributes.js.jsx",
+        "meta.block.js.jsx",
+        "meta.arrow.js.jsx",
+        "meta.var.expr.js.jsx",
+        "source.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#f90c6d",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "react-return",
+      "scope": [
+        "keyword.control.flow.js.jsx",
+        "meta.block.js.jsx",
+        "meta.arrow.js.jsx",
+        "meta.var.expr.js.jsx",
+        "source.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#a60cf9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "react-conditionals",
+      "scope": ["keyword.control.conditional.js.jsx"],
+      "settings": {
+        "foreground": "#f9f525",
+        "fontStyle": "bold"
+      }
+    },
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#37bbf8"
+        "foreground": "#76d676"
       }
     },
     {
       "name": "Variables",
       "scope": ["variable", "string constant.other.placeholder"],
       "settings": {
-        "foreground": "#d2e6f0"
+        "foreground": "#c0e6f9"
       }
     },
     {
       "name": "Colors",
       "scope": ["constant.other.color"],
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#ff0000"
       }
     },
     {
       "name": "Invalid",
       "scope": ["invalid", "invalid.illegal"],
       "settings": {
-        "foreground": "#FF5370"
+        "foreground": "#ff0000"
       }
     },
     {
@@ -60,7 +132,7 @@
         "keyword.other.substitution"
       ],
       "settings": {
-        "foreground": "#89DDFF"
+        "foreground": "#22ebfc"
       }
     },
     {
@@ -71,7 +143,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#ff009e"
       }
     },
     {
@@ -84,14 +156,29 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#13c4d9"
+        "foreground": "#00b6ff"
+      }
+    },
+    {
+      "name": "readme-title",
+      "scope": ["entity.name.section.markdown"],
+      "settings": {
+        "foreground": "#f92552",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Block Level Variables",
+      "scope": ["meta.block variable.other.property"],
+      "settings": {
+        "foreground": "#dbfc0a"
       }
     },
     {
       "name": "Block Level Variables",
       "scope": ["meta.block variable.other"],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#93e0ff"
       }
     },
     {
@@ -114,7 +201,7 @@
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#F78C6C"
+        "foreground": "#f077fe"
       }
     },
     {
@@ -129,7 +216,7 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#C3E88D"
+        "foreground": "#17f989"
       }
     },
     {
@@ -145,7 +232,7 @@
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#39faf1"
       }
     },
     {
@@ -166,7 +253,7 @@
         "source.postcss support.type.property-name"
       ],
       "settings": {
-        "foreground": "#B2CCD6"
+        "foreground": "#17f989"
       }
     },
     {
@@ -185,7 +272,7 @@
       "scope": ["variable.language"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#FF5370"
+        "foreground": "#ff6e5f"
       }
     },
     {
@@ -210,7 +297,7 @@
       "name": "Attributes",
       "scope": ["entity.other.attribute-name"],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#23b6fa"
       }
     },
     {
@@ -228,7 +315,7 @@
       "name": "CSS Classes",
       "scope": ["entity.other.attribute-name.class"],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#24e4fe"
       }
     },
     {
@@ -242,14 +329,14 @@
       "name": "Inserted",
       "scope": ["markup.inserted"],
       "settings": {
-        "foreground": "#C3E88D"
+        "foreground": "#ff0000"
       }
     },
     {
       "name": "Deleted",
       "scope": ["markup.deleted"],
       "settings": {
-        "foreground": "#FF5370"
+        "foreground": "#ff0000"
       }
     },
     {
@@ -316,7 +403,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#f3e621"
       }
     },
     {
