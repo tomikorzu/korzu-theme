@@ -11,6 +11,10 @@
     "type": "git",
     "url": "https://github.com/tomikorzu/korzu-theme.git"
   },
+  "keywords": [
+    "Theme",
+    "Korzu"
+  ],
   "categories": [
     "Themes"
   ],
